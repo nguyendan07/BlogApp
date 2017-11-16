@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = (
     'blog.apps.BlogConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    'taggit',
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
